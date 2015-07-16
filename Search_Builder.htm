@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Linux Search Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.3/angular.js" data-semver="1.4.3"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+     <div class="row">
+      <div class="col s6">
+        <input type="text" ng-model="searchText"/>
+      </div>
+      <div class="col s6">
+        <a class="waves-effect waves-light btn">Submit</a>
+      </div>
+    </div>
+    <div class="row">
+      <form>
+      <div ng-repeat="operation in configs.operations">
+         <div class='col'>
+          <input type="radio"  name="operations" ng-model="$parent.selectedOperation" value="{{operation.operation_name}}" >
+            <label>
+    {{operation.textContent}}
+  </label>
+    </div>
+      </div>
+      </form>
+      </div>
+      <div class="row">
+        
+      </div>
+  </body>
+
+</html>
