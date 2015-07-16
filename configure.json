@@ -1,74 +1,81 @@
 {
-  "operation" : {
-      "find" : {
+  "operations" : [ {
         "textContent" : "Search By Metadata",
-        "options" : [{
-                "Permissions" : {
+        "operation_name":"find",
+        "options" : [
+          {
+                  "option_name":"Permission",
                   "textContent" : "Permissions",
                   "value" : "perm",
-				  "type" : "string"
+				          "type" : "string"
                 },
-                "EmptyFile" : {
+                 {
+                   "option_name":"EmptyFile",
                   "textContent" : "Empty File",
                   "value" : "empty",
-				  "type" : "string"
+				          "type" : "string"
                 },
-                "ExecutableFile" : {
+                 {
+                   "option_name":"ExecutableFile",
                   "textContent" : "Executable File",
                   "value" : "a=x",
-				  "type" : "string"
+				          "type" : "string"
                 }
-            }]
+            ]
       },
-      "grep" : {
+      {
         "textContent" : "Search By Content",
-        "options" : [{
-                "Recursive" : {
+        "operation_name":"grep",
+        "options" : [
+                {
+                  "option_name":"Recursive",
                   "textContent" : "Recursive",
                   "value" : "r",
-				  "type" : "boolean"
+				          "type" : "boolean"
                 },
-                "Count" : {
+                {
+                  "option_name":"Count",
                   "textContent" : "Count",
                   "value" : "c",
-				  "type" : "number"
+				          "type" : "number"
                 },
-                "CompletePattern" : {
+                 {
+                   "option_name":"CompletePattern",
                   "textContent" : "Complete Pattern",
                   "value" : "w",
-				  "type" : "string"
+				          "type" : "string"
                 }
-            }]
-      },
-      "commonElements" : {
+            ]
+      }],
+      "common_operations" : {
             "options" : [{
-                "Name" : {
+                
                   "textContent" : "Name",
                   "value" : "name",
-				  "type" : "string"
+				          "type" : "string"
                 },
-                "Type" : {
+                {
                   "textContent" : "Type",
-                  "value" : "ftype",
-				  "type" : "string"
+                  "value" : "type",
+				          "type" : "string"
                 },
-                "CaseInsensitive" : {
+                {
                   "textContent" : "Case Insensitive",
                   "value" : "i",
-				  "type" : "boolean"
+				          "type" : "boolean"
                 },
-				"User" : {
+				        {
                   "textContent" : "User",
                   "value" : "user",
-				  "type" : "string"
+				          "type" : "string"
                 },
-				"ModifiedDateInterval" : {
+				        {
                   "textContent" : "Modified Date Interval",
                   "value" : "mtime",
-				  "type" : "number"
+				          "type" : "number"
                 }
 				
-            }]
+            ]
 			}
-        }
+        
 	}
