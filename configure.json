@@ -1,0 +1,74 @@
+{
+  "operation" : {
+      "find" : {
+        "textContent" : "Search By Metadata",
+        "options" : [{
+                "Permissions" : {
+                  "textContent" : "Permissions",
+                  "value" : "perm",
+				  "type" : "string"
+                },
+                "EmptyFile" : {
+                  "textContent" : "Empty File",
+                  "value" : "empty",
+				  "type" : "string"
+                },
+                "ExecutableFile" : {
+                  "textContent" : "Executable File",
+                  "value" : "a=x",
+				  "type" : "string"
+                }
+            }]
+      },
+      "grep" : {
+        "textContent" : "Search By Content",
+        "options" : [{
+                "Recursive" : {
+                  "textContent" : "Recursive",
+                  "value" : "r",
+				  "type" : "boolean"
+                },
+                "Count" : {
+                  "textContent" : "Count",
+                  "value" : "c",
+				  "type" : "number"
+                },
+                "CompletePattern" : {
+                  "textContent" : "Complete Pattern",
+                  "value" : "w",
+				  "type" : "string"
+                }
+            }]
+      },
+      "commonElements" : {
+            "options" : [{
+                "Name" : {
+                  "textContent" : "Name",
+                  "value" : "name",
+				  "type" : "string"
+                },
+                "Type" : {
+                  "textContent" : "Type",
+                  "value" : "ftype",
+				  "type" : "string"
+                },
+                "CaseInsensitive" : {
+                  "textContent" : "Case Insensitive",
+                  "value" : "i",
+				  "type" : "boolean"
+                },
+				"User" : {
+                  "textContent" : "User",
+                  "value" : "user",
+				  "type" : "string"
+                },
+				"ModifiedDateInterval" : {
+                  "textContent" : "Modified Date Interval",
+                  "value" : "mtime",
+				  "type" : "number"
+                }
+				
+            }]
+			}
+        }
+	}
