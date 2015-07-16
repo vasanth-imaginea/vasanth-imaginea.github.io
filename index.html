@@ -11,17 +11,19 @@
   </head>
   <body ng-controller="MainCtrl" class="container">
      <div class="row">
-       <div class="col-md-12">
-      <div class="col-md-6">
+       <div>
+      <div>
+          <h2>Welcome ! Linux Search Builder !</h2>
+          <h5 class = "tagLine">-Command made easy</h5>
         <input type="text" ng-model="searchText"/>
       </div>
-      <div class="col-md-6">
-        <a class="waves-effect waves-light btn" ng-click="submit()">Submit</a>
+      <div>
+        <a class="waves-effect waves-light btn subButton" ng-click="submit()">Submit</a>
       </div>
     </div>
     </div>
     <div class="row">
-      <div ng-repeat="operation in configs.operations" class="col-md-6 col-sm-6">
+      <div ng-repeat="operation in configs.operations"class="col-md-2 col-sm-2">
          
           <input type="radio"  ng-change="$parent.setOperation(operation)" ng-model="$parent.selOperation" name="nam"  ng-value="operation.operation_name" />
             <label>
@@ -31,14 +33,14 @@
       </div>
       <div class="row">
         <div ng-repeat="option in selectedOperation.options" >
-          <label>{{option.textContent}}<input type="checkbox" ng-model="option.checked"/></label>
+          <label><input type="checkbox" ng-model="option.checked"/>{{option.textContent}}</label>
         </div>
         <div ng-repeat="option in configs.common_operations.options">
-          <label>{{option.textContent}}<input type="checkbox" ng-model="option.checked"/></label>
+          <label><input type="checkbox" ng-model="option.checked"/>{{option.textContent}}</label>
         </div>
       </div>
       <div class="row">
-        <code>{{result}}</code>
+        <code class ="result">{{result}}</code>
       </div>
   </body>
 
