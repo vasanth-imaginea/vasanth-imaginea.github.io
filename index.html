@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="search">
+<html ng-app="plunker">
 
   <head>
     <meta charset="utf-8" />
@@ -11,17 +11,17 @@
   </head>
   <body ng-controller="MainCtrl" class="container">
      <div class="row">
-       <div>
-      <div>
+       <div class="col-md-12">
+      <div class="col-md-6">
         <input type="text" ng-model="searchText"/>
       </div>
-      <div>
+      <div class="col-md-6">
         <a class="waves-effect waves-light btn" ng-click="submit()">Submit</a>
       </div>
     </div>
     </div>
     <div class="row">
-      <div ng-repeat="operation in configs.operations" class="col-md-2 col-sm-2">
+      <div ng-repeat="operation in configs.operations" class="col-md-6 col-sm-6">
          
           <input type="radio" ng-model="$parent.selectedOperation" name="nam"  ng-value="operation" />
             <label>
