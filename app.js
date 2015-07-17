@@ -1,4 +1,4 @@
-var app = angular.module('plunker', []);
+var app = angular.module('search', []);
 
 app.controller('MainCtrl', function($scope,$http) {
   $http.get('configure.json').success(function(response){
