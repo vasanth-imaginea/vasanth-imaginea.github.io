@@ -23,9 +23,9 @@
     </div>
     </div>
     <div class="row">
-      <div ng-repeat="operation in configs.operations"class="col-md-2 col-sm-2">
+      <div ng-repeat="operation in configs.operations" class="col-md-2 col-sm-2">
          
-          <input type="radio"  ng-change="$parent.setOperation(operation)" ng-model="$parent.selOperation" name="nam"  ng-value="operation.operation_name" />
+          <input type="radio"  ng-model="$parent.selectedOperation" name="nam"  ng-value="operation.operation_name" />
             <label>
               {{operation.textContent}}
             </label>
