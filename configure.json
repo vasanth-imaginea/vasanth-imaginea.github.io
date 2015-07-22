@@ -70,8 +70,13 @@
 				          "type" : "string"
                 },
 				        {
-                  "textContent" : "Modified Date Interval",
-                  "value" : "mtime",
+                  "textContent" : "Modified Last 50 days",
+                  "value" : "mtime 50",
+				          "type" : "number"
+                },
+                          {
+                  "textContent" : "Modified Last 100 days",
+                  "value" : "mtime 100",
 				          "type" : "number"
                 }
 				

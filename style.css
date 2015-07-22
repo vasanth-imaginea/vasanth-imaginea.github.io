@@ -1,16 +1,38 @@
 .subButton
 {  margin-left: 200px;
-  margin-top: -56px;
+  margin-top: -81px;
 }
 .tagLine
 {
       margin-left: 450px;
+      color:white;
 }
 .result
 {
   padding: 10px 13px !important;
   font-size: 167% !important;
-  color: #c7254e;
+  color: #da0024;
   background-color: #f9f2f4;
-  border-radius: 3px;
+  border-radius : 0px !important;    
+}
+body
+{
+    background-image: linear-gradient(90deg,#0a1855 0,#da0024 100%);
+    color:white !important;
+}
+h2
+{
+    color:white !important;
+}
+.text_field
+{
+    height:35px;
+}
+.col-md-2.col-sm-2
+{
+    padding-left:0px !important;
+}
+.options
+{
+  margin-top:16px;
 }

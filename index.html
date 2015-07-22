@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html ng-app="search">
-
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Linux Search Builder</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="http://bootswatch.com/paper/bootstrap.min.css">
     <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.3/angular.js" data-semver="1.4.3"></script>
     <script src="app.js"></script>
-  </head>
-  <body ng-controller="MainCtrl" class="container">
+</head>
+<body ng-controller="MainCtrl" class="container">
      <div class="row">
        <div>
       <div>
 	  <h2>Welcome 2 Linux Search Builder ! <h2>
 	  <h5 class = "tagLine">- Commands made easy<h5>
-        <input type="text" ng-model="searchText"/>
+        <input type="text"  class = "text_field" ng-model="searchText"/>
       </div>
       <div>
-        <a class="waves-effect waves-light btn subButton" ng-click="submit()">Submit</a>
+        <a class="btn-success waves-effect waves-light btn subButton" ng-click="submit()">Generate</a>
       </div>
     </div>
     </div>
@@ -31,7 +30,7 @@
             </label>
       </div>
       </div>
-      <div class="row">
+      <div class="options row">
         <div ng-repeat="option in selectedOperation.options" >
           <label><input type="checkbox" ng-model="option.checked"/>{{option.textContent}}</label>
         </div>
@@ -39,9 +38,9 @@
           <label><input type="checkbox" ng-model="option.checked"/>{{option.textContent}}</label>
         </div>
       </div>
-      <div class="row">
+      <div class="options row">
         <code class = "result">{{result}}</code>
       </div>
-  </body>
+</body>
 
 </html>
